@@ -5,14 +5,14 @@ from django.shortcuts import render
 # Create your views here.
 
 def hello(request):
-    return HttpResponse(content='Hello, world')
+    return HttpResponse(content='Home page')
 
 
 def profile(request):
     data = {
         'name': 'Иван',
         'email': 'ivan@mail.ru',
-        'phone' : 89656423666
+        'phone': 89656423666
     }
     return render(request, "core/profile.html", context=data)
 
