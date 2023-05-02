@@ -1,0 +1,33 @@
+{% block content %}
+<h1>Задания</h1>
+
+<div style="padding: 15px; ">
+      <table>
+        <thead>
+            <tr>
+              <th>#</th>
+              <th>Задание</th>
+              <th>Выполнено</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>{{task1.name}}</td>
+              <td>{{task1.complete}}</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>{{task2.name}}</td>
+              <td>{{task2.complete}}</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>{{task3.name}}</td>
+              <td>{{task3.complete}}</td>
+            </tr>
+          </tbody>
+      </table>
+      </div>
+
+{% endblock content %}
